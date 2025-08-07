@@ -21,11 +21,6 @@ app.get('/', (req, res) => {
   res.json({ message: 'Great Post API is running!' });
 });
 
-// Connect to MongoDB
-// mongoose.connect(process.env.MONGODB_URI)
-//   .then(() => console.log('Connected to MongoDB'))
-//   .catch(err => console.error('MongoDB connection error:', err));
-
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
